@@ -89,6 +89,7 @@ export class NgxImgZoomComponent implements OnInit, AfterViewInit {
 
 
       /*prevent the lens from being positioned outside the image:*/
+      /* update this so that the lens must completely leave the image before it's hidden */
       if (x > this.img.width - this.lens.offsetWidth) {
         x = this.img.width - this.lens.offsetWidth;
 
